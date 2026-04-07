@@ -1,0 +1,35 @@
+// EventStandings
+// example variables grab WWU spring 2026 #1 ultimate singles standings
+
+query EventStandings($eventId: ID!, $page: Int!, 
+  $perPage: Int!) {
+  event(id: $eventId) {
+    id
+    name
+    standings(query: {
+      page: $page
+      perPage: $perPage
+    }) {
+      pageInfo {
+        total
+        totalPages
+      }
+      nodes {
+        id
+        entrant {
+          name
+        },
+        placement
+      }
+    },
+  }
+},
+
+variables: 
+{
+  "eventId": 1596037,
+  "page": 1,
+  "perPage": 22
+}
+
+

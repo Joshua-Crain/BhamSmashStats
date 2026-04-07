@@ -1,0 +1,16 @@
+{
+  "name": "querytesting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joshua-Crain",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "graphql": "^16.13.2",
+    "graphql-http": "^1.22.4"
+  }
+}
